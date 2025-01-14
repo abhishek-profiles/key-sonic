@@ -434,7 +434,7 @@ button {
   }
 
   .container input[type="text"] {
-    width: 90%; /* Input fields occupy more width */
+    width: 80%; /* Input fields occupy more width */
   }
 
   .speed {
@@ -446,7 +446,7 @@ button {
   }
 
   .word {
-    font-size: 30px; /* Adjust word font size for small devices */
+    font-size: 50px; /* Adjust word font size for small devices */
   }
 
   button {
