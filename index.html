@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" href="images/icon.png" type="image/png" />
+      <title>Key Sonic</title>
+      <script src="script.js" defer></script>
+    </head>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#container">Start</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="heading">
+        <h1>Welcome to Typing Speed Test</h1>
+        <p id="typing-text">
+          Test your typing speed and accuracy in a fun and interactive way
+        </p>
+      </div>
+    </section>
+
+    <!-- Typing Test Section -->
+    <main>
+      <section class="container" id="container">
+        <div class="speed" id="speed"></div>
+        <div class="word" id="word"></div>
+        <input
+          type="text"
+          id="typing-area"
+          placeholder="Challenge your speed, type here..."
+        />
+        <div class="timer" id="timer">0.0s</div>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn" disabled>Stop</button>
+      </section>
+    </main>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="content">
+        <h2>About Us</h2>
+        <p>
+          The Speed Typing Test is a platform designed to help you improve your
+          typing speed and accuracy. Whether you're a beginner or an experienced
+          typist, our tools provide a fun way to track and enhance your skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="content">
+        <h2>Features</h2>
+        <ul>
+          <li>Real-time typing speed calculation</li>
+          <li>Dynamic word generation</li>
+          <li>Responsive design for all devices</li>
+          <li>Detailed statistics to track progress</li>
+          <li>Fun animations to keep you engaged</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content" id="contact">
+        <p>&copy; 2025 Speed Typing Test. All Rights Reserved.</p>
+        <p>
+          Contact me at
+          <a href="https://github.com/abhishek-profiles" target="_blank"
+            >Github</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+

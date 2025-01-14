@@ -1,0 +1,515 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(
+    315deg,
+    rgba(10, 29, 100, 0.839) 0%,
+    rgba(0, 255, 203, 0.29) 77%
+  );
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #185bd9 10%, #ff1352 70%);
+
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  opacity: 70%;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+.navbar li a {
+  color: inherit; /* Inherit the color from the li */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the <a> element take the full width of the <li> */
+}
+
+.navbar li:hover {
+  background: linear-gradient(45deg, #640b29, #185bd9);
+  border-radius: 20px;
+  transform: translateY(-2px);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ff1361 0%, #185bd9 100%);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  opacity: 90%;
+}
+
+.hero h1 {
+  font-size: 60px;
+
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  animation: textClip 5s linear infinite, textShadow 2s ease-in-out infinite;
+
+  background: linear-gradient(-225deg, #6a00ff 30%, #3e0fab 50%, #ff0303 100%);
+  background-clip: text;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.402);
+}
+
+@keyframes textClip {
+  0% {
+    background-position: -100% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes textShadow {
+  0%,
+  100% {
+    text-shadow: 3px 3px 8px rgba(25, 0, 255, 0.2); /* Subtle soft shadow */
+  }
+  50% {
+    text-shadow: 5px 5px 15px #d11d1d66; /* Stronger shadow in the middle */
+  }
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 100vh;
+}
+
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #185bd9 0%, #ff1361 100%);
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+
+.features h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.features li {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer Section */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ff1361;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Typing Test Section */
+
+/* Add transitions to sections */
+section {
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    315deg,
+    rgba(17, 13, 155, 0.9) 0%,
+    rgba(177, 64, 77, 0.593) 45%,
+    rgba(96, 142, 59, 0.831) 77%,
+    rgba(19, 15, 98, 0.8) 100%
+  );
+}
+
+.word {
+  font-size: 48px;
+  margin-bottom: 20px;
+
+  text-align: center;
+  font-size: 50px;
+
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textClip 5s linear infinite;
+  display: inline-block;
+  font-size: 100px;
+}
+
+@keyframes textClip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.speed {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+.timer {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+input[type="text"] {
+  font-size: 36px;
+  padding: 10px 20px;
+  width: 50%;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  background-color: #231557;
+}
+
+#stop-btn {
+  font-family: georgia;
+  font-weight: bold;
+  color: #ffffff !important;
+  font-size: 15px;
+
+  padding: 14px 27px;
+  border-radius: 23px;
+
+  background: #ff1361;
+  cursor: pointer;
+}
+
+#start-btn {
+  font-family: georgia;
+  font-weight: bold;
+  color: #ffffff !important;
+  font-size: 15px;
+
+  padding: 14px 27px;
+  border-radius: 23px;
+
+  background: 0%, #185bd9;
+  cursor: pointer;
+}
+
+#stop-btn[disabled] {
+  background-color: #f88d8d;
+  cursor: not-allowed;
+}
+
+#start-btn[disabled] {
+  background-color: #76a6ff;
+}
+
+.incorrect {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#typing-area {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 23px;
+}
+
+/* For Responsive: */
+/* For devices with width less than 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px; /* Adjust the hero title size */
+  }
+
+  .about h2,
+  .features h2 {
+    font-size: 36px; /* Adjust the section titles */
+  }
+
+  .about p,
+  .features li {
+    font-size: 16px; /* Adjust the text sizes */
+  }
+
+  .navbar li {
+    padding: 8px 15px; /* Adjust navbar item padding */
+    font-size: 16px; /* Adjust navbar font size */
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .container input[type="text"] {
+    width: 80%; /* Make input fields responsive */
+  }
+
+  #typing-area::placeholder {
+    font-size: 1rem;
+  }
+
+  .speed {
+    font-size: 50px; /* Adjust speed text size */
+  }
+
+  .timer {
+    font-size: 28px; /* Adjust timer text size */
+  }
+
+  .word {
+    font-size: 36px; /* Adjust word font size */
+  }
+
+  /* Adjust button sizes for smaller screens */
+  button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  #stop-btn,
+  #start-btn {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .footer-content p {
+    font-size: 12px; /* Adjust footer text size */
+  }
+}
+
+/* For devices with width less than 480px (smaller mobile phones) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px; /* Further reduce the hero title size */
+  }
+
+  .about h2,
+  .features h2 {
+    font-size: 28px; /* Further adjust section titles */
+  }
+
+  .about p,
+  .features li {
+    font-size: 14px; /* Further adjust text sizes */
+  }
+
+  .navbar li {
+    font-size: 14px; /* Further adjust navbar item size */
+  }
+
+  .container input[type="text"] {
+    width: 90%; /* Input fields occupy more width */
+  }
+
+  .speed {
+    font-size: 40px; /* Adjust speed text for small devices */
+  }
+
+  .timer {
+    font-size: 24px; /* Adjust timer text for small devices */
+  }
+
+  .word {
+    font-size: 30px; /* Adjust word font size for small devices */
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #stop-btn,
+  #start-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
+/* For larger screens like tablets, laptops, and TVs */
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 70px; /* Increase font size for larger screens */
+  }
+
+  .about h2,
+  .features h2 {
+    font-size: 56px; /* Larger section titles */
+  }
+
+  .about p,
+  .features li {
+    font-size: 20px; /* Larger text sizes */
+  }
+
+  .navbar ul {
+    gap: 30px; /* Increase gap between navbar items */
+  }
+
+  .navbar li {
+    padding: 12px 30px; /* Adjust navbar padding */
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .container input[type="text"] {
+    width: 50%; /* Set input width for larger screens */
+  }
+
+  .speed {
+    font-size: 90px; /* Adjust speed text for larger screens */
+  }
+
+  .timer {
+    font-size: 40px; /* Adjust timer text for larger screens */
+  }
+
+  .word {
+    font-size: 70px; /* Adjust word font size for larger screens */
+  }
+
+  button {
+    font-size: 28px;
+    padding: 15px 30px;
+  }
+
+  #stop-btn,
+  #start-btn {
+    font-size: 18px;
+    padding: 16px 30px;
+  }
+}
