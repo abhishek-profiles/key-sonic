@@ -4,7 +4,10 @@ Key Sonic is a fun and interactive typing speed test game where you can measure 
 
 This project features a clean and minimal UI with a real-time timer, word display, and a word accuracy check. It also includes a fun shake effect for incorrect input to guide you while typing.
 
-<img width="1440" alt="1" src="https://github.com/user-attachments/assets/1b2eb8f1-ef6d-4c89-9a81-21c1926becb4" />
+<img width="1440" alt="1" src="https://github.com/user-attachments/assets/30e34269-3f18-4685-adda-4925b7258cf8" />
+
+
+
 
 Features
 Random word generation from an API
@@ -15,10 +18,9 @@ Interactive input field with shake animation on errors
 Simple and clean user interface
 Demo
 You can view a live demo of the app by opening the index.html file in your browser.
+<img width="1440" alt="2" src="https://github.com/user-attachments/assets/94c6ce05-6d9b-4d5e-87b7-6053f22688a0" />
+<img width="1440" alt="4" src="https://github.com/user-attachments/assets/057d61df-0e65-40a5-b58e-d6f1f0f3e628" />
 
-<img width="1440" alt="2" src="https://github.com/user-attachments/assets/3ecf7162-1ee1-476e-b995-98b27ad74cd6" />
-
-<img width="1440" alt="4" src="https://github.com/user-attachments/assets/b2828158-8a24-4ca7-a7e4-77339662e415" />
 
 Getting Started
 To run this project locally, follow the instructions below:
@@ -35,15 +37,6 @@ cd key-sonic
 
 
 Open index.html in your browser to run the project.
-Project Structure
-bash
-Copy code
-key-sonic/
-├── index.html        # The main HTML file
-├── style.css         # The stylesheet for styling the app
-├── script.js         # The main JavaScript file that controls the game logic
-└── README.md         # Project README file (this file)
-
 
 
 How it Works
@@ -60,7 +53,8 @@ changeWord: Updates the word to be typed when the previous word is typed correct
 shakeInputField: Provides visual feedback by shaking the input field if the typed word is incorrect.
 handleEnterKey: Handles the Enter key press for typing a word and moving to the next one.
 
-<img width="1440" alt="3" src="https://github.com/user-attachments/assets/b25780fb-f971-4232-8de9-36393ae3a795" />
+<img width="1440" alt="3" src="https://github.com/user-attachments/assets/055d832c-6ea3-4596-acd2-b70f956c84a5" />
+
 
 
 
