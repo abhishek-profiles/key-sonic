@@ -18,7 +18,8 @@ Interactive input field with shake animation on errors
 Simple and clean user interface
 Demo
 You can view a live demo of the app by opening the index.html file in your browser.
-<img width="1440" alt="2" src="https://github.com/user-attachments/assets/94c6ce05-6d9b-4d5e-87b7-6053f22688a0" />
+<img width="1439" alt="11 5" src="https://github.com/user-attachments/assets/56bceab1-45a0-4541-abdf-3070042d094e" />
+
 <img width="1440" alt="4" src="https://github.com/user-attachments/assets/057d61df-0e65-40a5-b58e-d6f1f0f3e628" />
 
 
