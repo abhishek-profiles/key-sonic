@@ -265,13 +265,13 @@ section {
 .timer {
   font-size: 36px;
   margin-bottom: 20px;
-  color: black;
+  color: #54ff6f;
 }
 
 input[type="text"] {
   font-size: 36px;
   padding: 10px 20px;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
@@ -345,13 +345,19 @@ button {
 }
 
 #typing-area {
-  color: black;
+  color: white;
+  box-shadow: 0px 10px 1000px 10px rgba(0, 0, 0, 0.64);
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 23px;
+
+  background: linear-gradient(
+    45deg,
+    rgba(255, 87, 87, 0.1),
+    rgba(46, 46, 237, 0.1)
+  );
 }
 
-/* For Responsive: */
 /* For devices with width less than 768px (tablets and smaller devices) */
 @media (max-width: 768px) {
   .hero h1 {
@@ -394,7 +400,7 @@ button {
   }
 
   .word {
-    font-size: 36px; /* Adjust word font size */
+    font-size: 48px; /* Adjust word font size */
   }
 
   /* Adjust button sizes for smaller screens */
@@ -437,7 +443,10 @@ button {
   .container input[type="text"] {
     width: 80%; /* Input fields occupy more width */
   }
-
+  #typing-area {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .speed {
     font-size: 40px; /* Adjust speed text for small devices */
   }
@@ -447,7 +456,7 @@ button {
   }
 
   .word {
-    font-size: 50px; /* Adjust word font size for small devices */
+    font-size: 48px; /* Adjust word font size for small devices */
   }
 
   button {
